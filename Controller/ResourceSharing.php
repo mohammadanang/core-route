@@ -120,7 +120,7 @@ trait ResourceSharing
      *
      * @return \Illuminate\Contracts\Auth\Authenticatable
      */
-    public function getAuthenticatedUser()
+    protected function getAuthenticatedUser()
     {
         return auth()->user();
     }
